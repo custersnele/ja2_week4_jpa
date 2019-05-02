@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.SplitPane?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<SplitPane dividerPositions="0.228643216080402" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" orientation="VERTICAL" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="be.pxl.ja2.gui.controller.BeerInformationController">
+    <items>
+    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
+         <children>
+            <Button layoutX="425.0" layoutY="21.0" mnemonicParsing="false" onAction="#searchBeers" prefHeight="46.0" prefWidth="121.0" text="Search" />
+            <TextField fx:id="searchTextField" layoutX="47.0" layoutY="22.0" prefHeight="46.0" prefWidth="368.0" />
+         </children></AnchorPane>
+    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
+         <children>
+            <Label layoutX="62.0" layoutY="41.0" text="Aantal resultaten:" />
+            <Label fx:id="numberOfResultsLabel" layoutX="177.0" layoutY="37.0" prefHeight="25.0" prefWidth="149.0" />
+            <Label fx:id="breweryLabel" layoutX="177.0" layoutY="83.0" prefHeight="25.0" prefWidth="313.0" />
+            <Label fx:id="beerLabel" layoutX="155.0" layoutY="131.0" prefHeight="25.0" prefWidth="313.0" />
+            <TableView fx:id="beerTable" layoutX="62.0" layoutY="71.0" prefHeight="200.0" prefWidth="467.0">
+            </TableView>
+         </children></AnchorPane>
+  </items>
+</SplitPane>
